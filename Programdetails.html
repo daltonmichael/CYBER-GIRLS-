@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Training Program</title>
+    <link rel="stylesheet" href="/Programdetails.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+</head>
+<body>  
+ 
+    <nav>
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>Cyber Girls</span>
+        </div>
+        <div class="drop-down">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/Who we are.html">Who we are</a></li>
+            <li><a href="">Program Details</a></li>
+            <li><a href="#sucessstories">Sucess Stories</a></li>
+            <li><a href="/mentorprofiles.html">Mentor Profiles</a></li>
+            <li><a href="#enrollment">Enrollment</a></li>
+            <li><a href="#resource Hub">Resource Hub</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><button class="login-button">Login</button></li>
+        </ul>
+    </nav>
+
+    <div class="main-content">
+        <div class="program-overview">
+            <h1>Cybersecurity Training Program</h1>
+            <p>Comprehensive training to master the essentials of cybersecurity</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <i class="fas fa-shield-alt"></i>
+                    Network Security
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Network Architecture and Protocols</li>
+                        <li>Firewall Configuration</li>
+                        <li>Intrusion Detection Systems</li>
+                        <li>VPN Implementation</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <i class="fas fa-user-secret"></i>
+                    Ethical Hacking
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Penetration Testing</li>
+                        <li>Vulnerability Assessment</li>
+                        <li>Social Engineering</li>
+                        <li>Security Auditing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <i class="fas fa-lock"></i>
+                    Data Protection
+                </div>
+                <div class="accordion-content">
+                    <ul>
+                        <li>Encryption Techniques</li>
+                        <li>Data Privacy Laws</li>
+                        <li>Security Policies</li>
+                        <li>Incident Response</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="program-details">
+            <div class="detail-card">
+                <i class="fas fa-clock"></i>
+                <h4>Duration</h4>
+                <p>6 months (24 weeks)</p>
+                <p>10 hours per week</p>
+            </div>
+            <div class="detail-card">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <h4>Format</h4>
+                <p>Hybrid Learning</p>
+                <p>Online & In-person sessions</p>
+            </div>
+            <div class="detail-card">
+                <i class="fas fa-list-check"></i>
+                <h4>Prerequisites</h4>
+                <p>Basic IT knowledge</p>
+                <p>Own laptop/computer</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Cyber Girls</h3>
+                <p>Empowering the future of cybersecurity</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p class="contact-us"><i class="fas fa-envelope"></i> contact@plutoways.org</p>
+                <p class="contact-us"><i class="fas fa-phone"></i> (+232)79585406</p>
+                <p class="contact-us"><i class="fas fa-location-dot"></i> 40 versace road opposite hell's gate </p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Cyber Girls. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Accordion functionality
+        document.querySelectorAll('.accordion-header').forEach(header => {
+            header.addEventListener('click', () => {
+                const item = header.parentElement;
+                const isActive = item.classList.contains('active');
+                
+                // Close all accordion items
+                document.querySelectorAll('.accordion-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Open clicked item if it wasn't active
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

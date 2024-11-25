@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program Enrollment</title>
+    <link rel="stylesheet" href="enrollment.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Program Enrollment</h1>
+        <p>Apply now to join our exciting program. Follow the steps below to complete your application.</p>
+    </header>
+
+    <main class="container">
+        <section class="instructions">
+            <h2>How to Apply</h2>
+            <ol>
+                <li>Check if you meet the <a href="#eligibility">eligibility criteria</a>.</li>
+                <li>Gather all required documents (see below).</li>
+                <li>Complete the application form below or use our <a href="#">application portal</a>.</li>
+            </ol>
+            <p><strong>Application Deadline:</strong> December 15, 2024</p>
+        </section>
+
+        <section id="eligibility" class="eligibility">
+            <h2>Eligibility Criteria</h2>
+            <ul>
+                <li>Must be at least 18 years old.</li>
+                <li>Hold a high school diploma or equivalent.</li>
+                <li>Provide proof of identification (passport, ID card).</li>
+            </ul>
+        </section>
+
+        <section class="documents">
+            <h2>Required Documents</h2>
+            <ul>
+                <li>Completed application form</li>
+                <li>Academic transcripts</li>
+                <li>Proof of identification</li>
+                <li>Motivation letter</li>
+            </ul>
+        </section>
+
+        <section class="form-section">
+            <h2>Application Form</h2>
+            <form action="/submit" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Your Name">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required placeholder="Your Email">
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required placeholder="Your Phone Number">
+
+                <label for="documents">Upload Documents:</label>
+                <input type="file" id="documents" name="documents" required>
+
+                <button type="submit" class="cta-button">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Cyber Girls . All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
