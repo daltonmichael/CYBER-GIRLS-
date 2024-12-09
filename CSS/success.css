@@ -1,16 +1,9 @@
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
-    padding: 2rem;
 }
 
 /* Navigation */
@@ -74,9 +67,21 @@ nav {
     margin: 5px;
 }
 
+.bttn {
+    background: #3498db;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+
 .success-stories {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 100px;
 }
 
 .success-stories h1 {
@@ -142,8 +147,8 @@ nav {
 footer {
     background: #2c3e50;
     color: #fff;
-    padding: 3rem 2rem 1rem;
-    margin-top: 8%;
+    padding: 2rem 2rem 1rem;
+    margin-top: 15%;
 }
 
 .footer-content {
@@ -178,4 +183,64 @@ footer {
     margin-top: 2rem;
     padding-top: 1rem;
     border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+
+
+/* Media Queries */
+/* For tablets and smaller screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    .drop-down {
+        display: block;
+    }
+    
+    .stories-grid {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 20px;
+    }
+    
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* For mobile phones (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    .stories-grid {
+        grid-template-columns: 1fr;
+        padding: 0 15px;
+    }
+    
+    .story {
+        padding: 1rem;
+    }
+    
+    .success-stories h1 {
+        font-size: 1.5rem;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .logo {
+        font-size: 1.2rem;
+    }
+}
+
+/* For larger screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+    .stories-grid {
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+    
+    .success-stories {
+        padding-top: 120px;
+    }
 }

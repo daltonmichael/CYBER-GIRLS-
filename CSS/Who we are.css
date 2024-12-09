@@ -85,7 +85,7 @@ nav {
 /* Hero Section */
 .hero {
     height: 50vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero-bg.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(/Images/cyber\ new\ prse.jpeg);
     background-size: cover;
     background-position: center;
     display: flex;
@@ -215,34 +215,104 @@ footer {
 }
 
 /* Responsive Design */
+/* ... existing CSS ... */
+
+/* Media Queries */
+
+/* For Tablets (768px and up) */
 @media screen and (max-width: 768px) {
+    /* Navigation */
     .nav-links {
         display: none;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        background: #fff;
+        flex-direction: column;
+        text-align: center;
     }
-    
-    .burger {
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .drop-down {
         display: block;
     }
-    
-    .hero h1 {
-        font-size: 2.5rem;
+
+    /* Features Section */
+    .feature-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
-    
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+/* ... existing code ... */
+
+/* Media Queries */
+
+/* For Tablets (768px and up) */
+@media screen and (max-width: 768px) {
+    /* ... existing tablet styles ... */
+}
+
+/* For Phones (480px and below) */
+@media screen and (max-width: 480px) {
+    /* Navigation */
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-links a {
+        font-size: 1rem;
+        padding: 0.8rem;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    /* Sections */
     section {
         padding: 3rem 1rem;
     }
-}
 
-/* Burger Menu */
-.burger {
-    display: none;
-    cursor: pointer;
-}
+    /* Mission Boxes */
+    .mission-container {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
 
-.burger div {
-    width: 25px;
-    height: 3px;
-    background-color: var(--text-color);
-    margin: 5px;
-    transition: all 0.3s ease;
+    /* Initiative Cards */
+    .initiative-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Impact Stats */
+    .impact-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .stat-box h3 {
+        font-size: 2rem;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
 }
